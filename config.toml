@@ -1,0 +1,52 @@
+base_url = "https://violapioggia.cn"
+author = "ViolaPioggia"
+default_language = "en"
+theme = "no-style-please"
+title = "ViolaPioggia's blog"
+description = "人不是生来自由的吗，为何现实却如此苦涩？"
+taxonomies = [{ name = "tags" }, { name = "categories" }]
+
+[markdown]
+highlight_code = true
+render_emoji = true
+
+[extra]
+logo = "images/logo.png"
+header_nav = [
+    { lang = "en", name = "home", path = "/" },
+    { lang = "en", name = "archived", path = "/posts" },
+    { lang = "en", name = "categories", path = "/categories" },
+    { lang = "en", name = "about", path = "/about" },
+]
+footer_nav = [
+    { name = "RSS", url = "./atom.xml" },
+    { name = "Github", url = "https://github.com/ViolaPioggia" },
+    { name = "Twitter", url = "https://twitter.com/ViolaPioggia" },
+]
+recent_pages = [
+    { lang = "en", section = "posts/_index.md", limit = 7 },
+]
+taxonomies_map = [
+    { lang = "en", taxonomy = "tags", name = "tags"},
+    { lang = "en", taxonomy = "categories", name = "categories"},
+]
+paginator_hint.first = [
+    { lang = "en", hint = "First" },
+]
+paginator_hint.previous = [
+    { lang = "en", hint = "Pervious" },
+]
+paginator_hint.next = [
+    { lang = "en", hint = "Next" },
+]
+paginator_hint.last = [
+    { lang = "en", hint = "Last" },
+]
+
+[extra.giscus]
+enable = true
+data_repo = "ViolaPioggia/blog"
+data_repo_id = "R_kgDOJdd9lw"
+data_category = "Announcements"
+data_category_id = "DIC_kwDOJdd9l84CbO42"
+lang_map = [{ lang = "zh", to = "zh-CN" }]
