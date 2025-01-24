@@ -52,7 +52,7 @@ const ap1 = new APlayer({
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 <div id="2"></div>
 <script>
-const ap1 = new APlayer({
+const ap2 = new APlayer({
     container: document.getElementById('2'),
     audio: [{
         name: 'ガラスのくつ',
