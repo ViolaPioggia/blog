@@ -2,8 +2,6 @@
 title: "etcd raft 源码走读（4）——snapshot"
 date: "2025-01-23"
 ---
-# etcd raft 源码走读（4）——snapshot
-
 snapshot（快照）顾名思义就是帮助压缩日志，那在 etcd-raft 中又是怎么样实现的呢？Leader 什么时候会主动发送带 snapshot 的日志，Follower 又是怎么处理接收到的 snapshot？在这一章节中会得到解答
 
 # 发送 snapshot
