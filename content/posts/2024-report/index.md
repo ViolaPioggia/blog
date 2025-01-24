@@ -13,7 +13,20 @@ date: "2025-01-25"
 
 # 受刑之旅
 
-<audio src="Promise.mp3"></audio>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<div id="1"></div>
+<script>
+const ap1 = new APlayer({
+    container: document.getElementById('1'),
+    audio: [{
+        name: 'Promise',
+        artist: '山岡晃',
+        url: 'Promise.mp3',
+        cover: 'cover_1.png'
+    }]
+});
+</script>
 
 今年 6 月底的时候，我去了一趟学校旁边的老君洞求签，其实越是不顺的人越相信命运，因为当人遭到打击的时候没有别的什么依靠只能怪老天爷不公，而成功的人往往会更加自信。当我虔诚静心地摇完签结果却令我万万没想到 ——
 
@@ -35,7 +48,20 @@ date: "2025-01-25"
 
 # 锚
 
-<audio src="./玻璃鞋.mp3"></audio>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<div id="2"></div>
+<script>
+const ap1 = new APlayer({
+    container: document.getElementById('2'),
+    audio: [{
+        name: 'ガラスのくつ',
+        artist: 'いとうかなこ',
+        url: '玻璃鞋.mp3',
+        cover: 'cover_2.png'
+    }]
+});
+</script>
 
 2024.5.25 我的 20 岁生日，同时我也做出了一个大胆的决定：向我喜欢的女生表白，或许是傻人有傻福吧，我喜欢的人也喜欢着我。
 
